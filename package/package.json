@@ -38,17 +38,5 @@
     "vite": "^4.2.0",
     "vite-plugin-dts": "^2.1.0",
     "vitest": "^0.29.7"
-  },
-  "description": "This is a test package",
-  "author": "Mátyás Fürtös",
-  "license": "MIT",
-  "homepage": "<YOUR_SITE_URL>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/matyas-f/state-management-poc.git"
-  },
-  "bugs": {
-    "url": "https://github.com/matyas-f/state-management-poc/issues"
-  },
-  "keywords": ["some", "keywords", "to", "describe", "the", "package"]
+  }
 }
