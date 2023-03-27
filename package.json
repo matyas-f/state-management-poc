@@ -23,8 +23,8 @@
     "test:types": "tsc --noEmit",
     "eslint": "eslint --fix '*.{cjs,js,ts}' '{src,tests}/**/*.{ts,tsx}'",
     "eslint:ci": "eslint '*.{cjs,js,ts}' '{src,tests}/**/*.{ts,tsx}'",
-    "prettier": "prettier '*.{json,md,yml}' '{src,tests,docs,.github}/**/*.{json,md,yml}' --write",
-    "prettier:ci": "prettier '*.{json,md,yml}' '{src,tests,docs,.github}/**/*.{json,md,yml}' --list-different"
+    "prettier": "prettier '*.{json,md,yml}' '{src,tests,docs,.github}/**/*.{json,md,mdx,yml}' --write",
+    "prettier:ci": "prettier '*.{json,md,yml}' '{src,tests,docs,.github}/**/*.{json,md,mdx,yml}' --list-different"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.0",
