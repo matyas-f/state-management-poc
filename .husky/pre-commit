@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn prettier:ci ||
+(
+    echo '❌ Prettier check failed ❌';
+    false;
+)
+
+yarn eslint:ci ||
+(
+    echo '❌ ESLint check failed ❌';
+    false; 
+)
+
+yarn test:types ||
+(
+    echo '❌ Typescript type check failed ❌';
+    false;
+)
+
+echo '✅ Code looks good'
+echo ''

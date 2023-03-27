@@ -15,11 +15,21 @@
     }
   },
   "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
     "dev:playground": "cd react-playground && vite",
+    "build": "vite build",
     "test": "vitest",
-    "build": "vite build"
+    "test:types": "tsc --noEmit",
+    "eslint": "eslint --fix '*.{cjs,js,ts}' '{src,tests}/**/*.{ts,tsx}'",
+    "eslint:ci": "eslint '*.{cjs,js,ts}' '{src,tests}/**/*.{ts,tsx}'",
+    "prettier": "prettier '*.{json,md,yml}' '{src,tests,docs,.github}/**/*.{json,md,yml}' --write",
+    "prettier:ci": "prettier '*.{json,md,yml}' '{src,tests,docs,.github}/**/*.{json,md,yml}' --list-different"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.5.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cz-commitlint": "^17.5.0",
     "@testing-library/react": "^14.0.0",
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.28",
@@ -27,9 +37,12 @@
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "commitizen": "^4.3.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "inquirer": "8",
     "jsdom": "^21.1.1",
     "prettier": "^2.8.7",
     "react": "^18.2.0",
@@ -38,6 +51,14 @@
     "vite": "^4.2.0",
     "vite-plugin-dts": "^2.1.0",
     "vitest": "^0.29.7"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "description": "This is a test package",
   "author": "Mátyás Fürtös",
