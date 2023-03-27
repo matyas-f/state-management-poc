@@ -1,14 +1,14 @@
 import { expect, it } from 'vitest';
 import { fireEvent, render } from '@testing-library/react';
 import { useState } from 'react';
-import { sum } from '../src/index';
+import { sum1 } from '../src/index';
 
 it('test1', () => {
   expect(true).toBe(true);
 });
 
 it('test2', () => {
-  expect(sum(2, 2)).toBe(4);
+  expect(sum1(2, 2)).toBe(4);
 });
 
 it('test3', async () => {

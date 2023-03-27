@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import './App.css';
-import { sum } from '../../src/index';
+import { sum1 } from '../../src/index';
 
 function App() {
   const [count, setCount] = useState(0);
-  console.log(sum(count, count));
+  console.log(sum1(count, count));
 
   return (
     <div className="App">
