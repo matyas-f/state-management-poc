@@ -63,7 +63,7 @@
   "description": "This is a test package",
   "author": "Mátyás Fürtös",
   "license": "MIT",
-  "homepage": "<YOUR_SITE_URL>",
+  "homepage": "https://github.com/matyas-f/state-management-poc",
   "repository": {
     "type": "git",
     "url": "https://github.com/matyas-f/state-management-poc.git"
