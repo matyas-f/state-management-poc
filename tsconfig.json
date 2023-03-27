@@ -10,8 +10,8 @@
     "exactOptionalPropertyTypes": true,
     "baseUrl": ".",
     "paths": {
-      "simple-state": ["./src/index.ts"],
-      "simple-state/*": ["./src/*.ts"]
+      "simple-state-test": ["./src/index.ts"],
+      "simple-state-test/*": ["./src/*.ts"]
     }
   },
   "include": ["src/**/*", "tests/**/*"],

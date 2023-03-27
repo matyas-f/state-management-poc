@@ -1,17 +1,17 @@
 {
-  "name": "simple-state",
+  "name": "simple-state-test",
   "version": "0.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/simple-state.umd.cjs",
-  "module": "./dist/simple-state.js",
+  "main": "./dist/simple-state-test.umd.cjs",
+  "module": "./dist/simple-state-test.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/simple-state.js",
-      "require": "./dist/simple-state.umd.cjs"
+      "import": "./dist/simple-state-test.js",
+      "require": "./dist/simple-state-test.umd.cjs"
     }
   },
   "scripts": {
