@@ -71,5 +71,12 @@
   "bugs": {
     "url": "https://github.com/matyas-f/state-management-poc/issues"
   },
-  "keywords": ["some", "keywords", "to", "describe", "the", "package"]
+  "keywords": [
+    "some",
+    "keywords",
+    "to",
+    "describe",
+    "the",
+    "package"
+  ]
 }
